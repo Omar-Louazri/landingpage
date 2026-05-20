@@ -441,7 +441,7 @@ export default function ProductPage() {
             <div className={styles.timelineItem}>
               <div className={styles.timelineIllustrationWrapper}>
                 <div className={styles.colorIllustrationPlaceholder}>
-                  <Image src="/optimized/timeline-vert.jpg" alt="Pilulier Vert" width={600} height={600} style={{ width: '100%', height: 'auto', objectFit: 'contain' }} />
+                  <Image src="/optimized/timeline-vert1.jpg" alt="Pilulier Vert" width={600} height={600} style={{ width: '100%', height: 'auto', objectFit: 'contain' }} />
                 </div>
               </div>
               <div className={styles.timelineContent}>
@@ -455,7 +455,7 @@ export default function ProductPage() {
             <div className={styles.timelineItem}>
               <div className={styles.timelineIllustrationWrapper}>
                 <div className={styles.colorIllustrationPlaceholder}>
-                  <Image src="/optimized/timeline-orange.jpg" alt="Pilulier Orange" width={600} height={600} style={{ width: '100%', height: 'auto', objectFit: 'contain' }} />
+                  <Image src="/optimized/timeline-orange1.jpg" alt="Pilulier Orange" width={600} height={600} style={{ width: '100%', height: 'auto', objectFit: 'contain' }} />
                 </div>
               </div>
               <div className={styles.timelineContent}>
@@ -469,7 +469,7 @@ export default function ProductPage() {
             <div className={styles.timelineItem}>
               <div className={styles.timelineIllustrationWrapper}>
                 <div className={styles.colorIllustrationPlaceholder}>
-                  <Image src="/optimized/timeline-rouge.jpg" alt="Pilulier Rouge" width={600} height={600} style={{ width: '100%', height: 'auto', objectFit: 'contain' }} />
+                  <Image src="/optimized/timeline-rouge1.jpg" alt="Pilulier Rouge" width={600} height={600} style={{ width: '100%', height: 'auto', objectFit: 'contain' }} />
                 </div>
               </div>
               <div className={styles.timelineContent}>
