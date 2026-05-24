@@ -703,11 +703,11 @@
 
 .timelineIllustrationWrapper {
   position: absolute;
-  left: -60px; /* Large bleed */
+  right: 0px;
   top: 50%;
   transform: translateY(-50%);
-  width: 380px;
-  height: 380px;
+  width: 260px;
+  height: 260px;
   z-index: 1;
   pointer-events: none;
   display: flex;
@@ -715,24 +715,24 @@
   justify-content: center;
 }
 
-/* The shadow fade effect - even subtler */
+/* Fader blends the left edge of the image into the card background */
 .timelineIllustrationWrapper::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, transparent 5%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.8) 80%, #ffffff 100%);
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.4) 60%, transparent 95%);
   z-index: 2;
 }
 
 .timelineContent {
   position: relative;
   z-index: 3;
-  margin-left: 0; /* No margin on the left */
-  margin-top: -50px; /* Higher up */
+  margin-left: 0;
+  margin-top: -50px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 100%;
+  gap: 23px;
+  width: 60%;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 25px rgba(255, 255, 255, 0.6);
 }
 
@@ -741,9 +741,22 @@
   font-weight: 800;
   color: #1a1a1a;
   letter-spacing: -0.02em;
-  white-space: nowrap; /* Forces title on one line */
+  white-space: nowrap;
 }
+@media (max-width: 769px) {
+  .timelineTitle {
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
 
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+}
 .timelineDesc {
   font-size: 1.1rem;
   color: #555;
@@ -778,13 +791,14 @@
   }
   .timelineContent {
     margin-left: 0;
-    margin-top: 0; /* Reset the negative margin on mobile */
+    margin-top: 0;
+    width: 100%;
     max-width: 100%;
   }
   .timelineTitle {
     font-size: 1.3rem;
-    white-space: normal; /* Allow wrapping on mobile */
-    text-shadow: none; /* Shadow less necessary on mobile layout */
+    white-space: nowrap;
+    text-shadow: none;
   }
 }
 
@@ -800,6 +814,15 @@
   }
   .timelineIllustrationWrapper {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 449px) {
+  .timelineTitle {
+    white-space: normal;
+  }
+  .timelineDesc{
+    margin: 30px;
   }
 }
 
