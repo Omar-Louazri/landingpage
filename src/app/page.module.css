@@ -818,11 +818,14 @@
 }
 
 @media (max-width: 449px) {
-  .timelineTitle {
-    white-space: normal;
-  }
+
   .timelineDesc{
     margin: 30px;
+  }
+
+  .timelineTitle {
+    font-size: clamp(0.65rem, 3.1vw, 1.1rem);
+    letter-spacing: -0.04em;
   }
 }
 

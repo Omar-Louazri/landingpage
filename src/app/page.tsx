@@ -436,8 +436,6 @@ export default function ProductPage() {
           </div>
 
           <div className={styles.timeline}>
-
-            
             <div className={styles.timelineItem}>
               <div className={styles.timelineIllustrationWrapper}>
                 <div className={styles.colorIllustrationPlaceholder}>
