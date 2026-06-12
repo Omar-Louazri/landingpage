@@ -6,9 +6,8 @@ import Lenis from "lenis";
 import Image from "next/image";
 import Link from "next/link";
 import { 
-  Star, 
+  Star,
   ChevronDown,
-  ShoppingCart,
   ArrowRight
 } from "lucide-react";
 import styles from "./page.module.css";
@@ -107,9 +106,6 @@ export default function ProductPage() {
               <div className={styles.flagRed} />
             </div>
 
-            <button className={styles.iconBtn}>
-              <ShoppingCart size={22} />
-            </button>
           </div>
         </div>
       </header>
@@ -408,13 +404,8 @@ export default function ProductPage() {
             <p style={{ fontSize: "0.85rem", color: "#b45309", marginBottom: "8px", fontWeight: "600", textAlign: "center", width: "100%" }}>
               Réduction réservée aux 200 premières précommandes
             </p>
-            <button
-              className={`${styles.addToCartBtn} ${styles.animFadeInUp6}`}
-            >
-              Ajouter au panier - 29,90 €/mois
-            </button>
             <a
-              href="https://www.pillqare.com/checkouts/cn/hWNC7GaA1YUiT26zvPIZUauZ/fr-fr?_r=AQABJaQI5FDZm_ViqfB-jByb38XU-bNqMuSV7PUe0vMl4Xo"
+              href="https://shop.pillqare.com/checkouts/cn/hWNC7GaA1YUiT26zvPIZUauZ/fr-fr?_r=AQABJaQI5FDZm_ViqfB-jByb38XU-bNqMuSV7PUe0vMl4Xo"
               className={`${styles.applePayBtn} ${styles.animFadeInUp7}`}
             >
               Acheter maintenant
