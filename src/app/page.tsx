@@ -405,7 +405,7 @@ export default function ProductPage() {
               Réduction réservée aux 200 premières précommandes
             </p>
             <a
-              href="https://shop.pillqare.com/checkouts/cn/hWNC7GaA1YUiT26zvPIZUauZ/fr-fr?_r=AQABJaQI5FDZm_ViqfB-jByb38XU-bNqMuSV7PUe0vMl4Xo"
+              href="https://shop.pillqare.com/checkouts/cn/hWNDFtTExDVEBEkBWpCCx53D/"
               className={`${styles.applePayBtn} ${styles.animFadeInUp7}`}
             >
               Acheter maintenant
